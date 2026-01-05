@@ -26,7 +26,8 @@ pip install -r requirements.txt
 
 **Gmail 사용 시:**
 1. Google 계정 → 보안 → 2단계 인증 활성화
-2. 앱 비밀번호 생성 (https://myaccount.google.com/apppasswords)
+2. 같은 보안 영역에서 ‘앱 비밀번호’(App passwords) 메뉴로 이동
+   * 메뉴가 안 보이면 상단 검색창에 “앱 비밀번호”라고 검색
 3. 생성된 16자리 비밀번호 저장
 
 **Naver 사용 시:**
@@ -67,9 +68,9 @@ python main.py
 - 권장: 30분 ~ 1시간
 
 ### 스크래퍼 업데이트 필요
-현재 코드의 `scrapers/danawa.py`와 `scrapers/gmarket.py`는 **스켈레톤**입니다.
+현재 코드의 `scrapers/gmarket.py`는 **스켈레톤**입니다.
 실제 사용하려면:
-1. 각 사이트 검색 결과 페이지 HTML 구조 분석
+1. 지마켓 검색 결과 페이지 HTML 구조 분석
 2. CSS 셀렉터를 실제 값으로 교체
 3. 상품 페이지 가격 추출 로직 구현
 
